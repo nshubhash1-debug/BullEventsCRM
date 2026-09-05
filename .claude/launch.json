@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "bull-realty-crm-dev",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": ["/c", "npm", "--prefix", "bull-realty-crm", "run", "dev"],
+      "port": 3000,
+      "autoPort": true
+    }
+  ]
+}

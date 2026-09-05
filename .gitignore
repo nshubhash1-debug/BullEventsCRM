@@ -1,0 +1,95 @@
+# ---------------------------------------------------------------------------
+# Secrets and infrastructure
+#
+# This repository is public. Everything in this block either is a credential or
+# points at one, and none of it belongs in a public history — which is not
+# undone by deleting the file later, because the commit stays.
+# ---------------------------------------------------------------------------
+
+# Carries the JWT signing key and the database password.
+BullEvents.Api/appsettings.Development.json
+BullEvents.Api/appsettings.Production.json
+BullEvents.Api/appsettings.*.local.json
+
+# Real environment values. .env.example is committed as the template.
+.env
+.env.local
+.env.*.local
+**/.env
+**/.env.local
+**/.env.*.local
+
+# Cloudflare tunnel: the tunnel id and the path to its credentials file.
+cloudflared/
+*.pem
+*.key
+*.pfx
+
+# Scripts that carry or set a password.
+fix-postgres-password.ps1
+pg_hba.conf.backup*
+
+# ---------------------------------------------------------------------------
+# Data
+#
+# Database dumps and raw data directories. These hold real leads, employees and
+# contact details — publishing them would be a data breach, not an untidy repo.
+# ---------------------------------------------------------------------------
+
+*.sql
+backup-*.json
+mysql-data/
+pgdata/
+*.bak
+*.dump
+
+# ---------------------------------------------------------------------------
+# Build output and caches
+#
+# Reproducible from source. Together these are about 13 GB, which is also why
+# nothing here has ever been committed.
+# ---------------------------------------------------------------------------
+
+# .NET
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+.vs/
+
+# Node and Next
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+.turbo/
+
+# Logs
+*.log
+api.log
+
+# ---------------------------------------------------------------------------
+# Other people's repositories
+#
+# Both of these are checkouts of something else that happen to sit inside this
+# folder. Committing them would either vendor a third-party library into this
+# history or duplicate another project of the same owner's.
+# ---------------------------------------------------------------------------
+
+# A clone of github.com/pgvector/pgvector — a dependency, not this project.
+_build/
+
+# A checkout of github.com/nshubhash1-debug/Bullcrm_V2, empty here.
+Bullcrm_V2/
+
+# ---------------------------------------------------------------------------
+# Editor and OS
+# ---------------------------------------------------------------------------
+
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+
+# Local Claude Code settings — machine-specific paths.
+.claude/settings.local.json

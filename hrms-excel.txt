@@ -1,0 +1,85 @@
+===== Requirement =====
+1: 1 | Company Setup | Create three companies under one HRMS | Company name, code, logo, address, statutory details | Super Admin can switch between companies; data remains company-wise | All | Must Have | Remarks | Pending
+2: 2 | User Access | Create role-based login | Head HR, Admin, Manager, Accounts, Employee | Access should depend on role and assigned company/department | All | Must Have | Pending
+3: 3 | Employee Master | Create complete employee profile | Employee ID, name, photo, DOB, contact, address, emergency contact, company, department, designation, manager, joining date, employment type, location | HR creates/updates employee profile; employee can update permitted fields | All | Must Have | Pending
+4: 4 | Employee Master | Employment status tracking | Active, Probation, Confirmed, Resigned, Notice Period, Relieved, Terminated | Status should update employee lifecycle automatically/manual by authorized HR | All | Must Have | Pending
+5: 5 | Employee Master | Department & designation master | Department, designation, reporting manager, location | Admin can add/edit without developer support | All | Must Have | Pending
+6: 6 | Documents | Employee document folder | Aadhaar, PAN, photo, resume, qualification, experience, offer, appointment, agreements, letters, Bank details Copy | HR uploads documents; access controlled by role | All | Must Have | Pending
+7: 7 | Documents | Document expiry reminder | Document type, expiry date, reminder date | System sends reminder before expiry | All | Good to Have | Pending
+8: 8 | Recruitment | Vacancy/JD management | Position, department, location, experience, salary range, JD, hiring manager | Requirement → Vacancy → Candidate → Interview → Selection | All | Must Have | Pending
+9: 9 | Recruitment | Candidate database | Name, phone, email, CV, source, experience, interview notes, status | Candidate can be moved through recruitment stages | All | Must Have | Pending
+10: 10 | Recruitment | Offer & joining conversion | Offer details, joining date, salary, documents | Selected candidate can be converted to employee without re-entering data | All | Must Have | Pending
+11: 11 | Onboarding | Joining checklist | Documents, appointment letter, ID, email, assets, policies, induction | HR can see pending/completed joining formalities | All | Must Have | Pending
+12: 12 | Attendance | Daily attendance | Date, in time, out time, status, late, early leaving, WFH, OD, holiday, weekly off | Attendance should feed leave and payroll | All | Must Have | Pending
+13: 13 | Attendance | Attendance correction | Employee/date/reason/correct time/attachment | Employee request → Manager/HR approval → attendance update | All | Must Have | Pending
+14: 14 | Attendance | Biometric/API integration | Device/API fields as required | System should be ready for biometric integration | All | Good to Have | Pending
+15: 15 | Shift | Shift/roster management | Shift name, start time, end time, grace period, weekly off | HR can assign shifts employee-wise or team-wise | All | Must Have | Pending
+16: 16 | Leave | Leave management | Leave type, balance, date, half day, reason, attachment | Employee applies → Manager approval → HR approval → attendance update | All | Must Have | Pending
+17: 17 | Leave | Leave rules | Monthly entitlement, carry forward, LWP/LOP, approval levels | Rules should be configurable from Admin Panel | All | Must Have | Pending
+18: 18 | Payroll | Salary structure | Basic, HRA, allowances, incentive, bonus, overtime, deductions | HR/Accounts can define salary structure employee-wise | All | Must Have | Pending
+19: 19 | Payroll | Monthly salary processing | Attendance, paid leave, LOP, deductions, incentives | Attendance → LOP → payroll → deductions → net salary | All | Must Have | Pending
+20: 20 | Payroll | LOP calculation | LOP days and deduction method | Unpaid absence/leave should automatically affect salary | All | Must Have | Pending
+21: 21 | Payroll | Salary revision | Old salary, revised salary, effective date, reason | Authorized HR can process increment/revision with history | All | Must Have | Pending
+22: 22 | Payroll | Salary slip | Employee salary details, earnings, deductions, net salary | Generate downloadable PDF salary slip | All | Must Have | Pending
+23: 23 | Statutory | PF management | UAN, PF wage, employee/employer contribution | Configurable PF calculation and report | All | Must Have | Pending
+24: 24 | Statutory | ESIC management | IP number, ESIC wage, contribution days, employee/employer contribution | Configurable ESIC calculation and report | All | Must Have | Pending
+25: 25 | ESS | Employee self-service | Profile, attendance, leave, payslip, documents, requests | Employee logs in and sees only own permitted data | All | Must Have | Pending
+26: 26 | Manager | Manager approval dashboard | Team attendance, leave, correction, WFH/OD requests | Manager sees only assigned team | All | Must Have | Pending
+27: 27 | HR | HR dashboard | Total employees, present, absent, leave, WFH, late, joiners, exits, pending approvals | Dashboard with company and department filters | All | Must Have | Pending
+28: 28 | Performance | Performance/KPI | KRA, KPI, target, achievement, rating, review | Employee/Manager review → HR record | All | Good to Have | Pending
+29: 29 | Assets | Asset issue/return | Asset type, serial no., issue date, condition, return date | Employee joining → issue; exit → clearance/return | All | Good to Have | Pending
+30: 30 | Expense | Travel/expense reimbursement | Request, amount, bills, advance, approval, reimbursement status | Employee request → Manager → Accounts → Paid | All | Good to Have | Pending
+31: 31 | Helpdesk | HR ticket system | Category, subject, description, attachment, status, assigned person | Employee raises request → HR resolves → close | All | Good to Have | Pending
+32: 32 | Policies | Policy acknowledgement | Policy name, version, acknowledgement date | Employee reads and acknowledges policy | All | Good to Have | Pending
+33: 33 | Letters | HR letter generation | Employee details + template | Generate Offer, Appointment, Confirmation, Increment, Promotion, Transfer, Warning, Experience, Relieving letters | All | Must Have | Pending
+34: 34 | Exit | Resignation workflow | Resignation date, notice period, LWD, reason | Employee/HR resignation → approval → clearance → F&F → exit documents | All | Must Have | Pending
+35: 35 | Exit | Full & Final | Salary due, LOP, leave encashment if applicable, deductions, assets, final payable | Accounts/HR can complete F&F and retain record | All | Must Have | Pending
+36: 36 | Reports | Employee reports | Employee master, department, designation, location, status | Filter by company/department/date and export | All | Must Have | Pending
+37: 37 | Reports | Attendance & leave reports | Monthly attendance, absence, late, leave, LOP | Excel/PDF export | All | Must Have | Pending
+38: 38 | Reports | Payroll & statutory reports | Salary, deductions, PF, ESIC, bank sheet | Company/month filters and export | All | Must Have | Pending
+39: 39 | Security | Confidential data restriction | Salary, bank, Aadhaar, PAN and documents | Only authorized roles can view/edit sensitive information | All | Must Have | Pending
+40: 40 | Security | Audit trail | User, action, old value, new value, date/time | Record important changes in employee/payroll data | All | Must Have | Pending
+41: 41 | Bull Events | Event manpower allocation | Event name, event date, venue, employee, role, shift | Employee → Event → Venue → Shift → Deployment | Bull Events | Must Have | Pending
+42: 42 | Bull Events | Event attendance | Event, employee, reporting time, closing time, attendance status | Event-wise attendance should be reportable | Bull Events | Must Have | Pending
+43: 43 | Bull Events | Production/Blue Collar team | Team type, role, event allocation, uniform/ID | Separate white collar and production/blue collar records | Bull Events | Good to Have | Pending
+44: 44 | Bull Events | Uniform/ID/Lanyard tracking | Item, issue date, return date, condition | Issue/return record should be linked to employee | Bull Events | Good to Have | Pending
+45: 45 | Bull Events | Event overtime/incentive | Event, employee, OT hours, incentive rule, amount | Approved OT/incentive should flow to payroll | Bull Events | Must Have | Pending
+46: 46 | Bull Realty | Project/site allocation | Project, site, employee, role, manager, effective date | Employee can be assigned/transferred between projects/sites | Bull Realty | Must Have | Pending
+47: 47 | Bull Realty | Sales target & achievement | Employee, project, period, target, achievement | Target entry → achievement → performance report | Bull Realty | Must Have | Pending
+48: 48 | Bull Realty | Sales incentive/commission | Rule, target slab, achievement, incentive amount | Configurable incentive calculation and approval | Bull Realty | Must Have | Pending
+49: 49 | Bull Realty | Field duty/official visit | Date, site, purpose, location, approval | Field duty should reflect in attendance/OD | Bull Realty | Good to Have | Pending
+50: 50 | Bull Seva | Territory/area allocation | State, city, territory, area, employee | Field employee can be assigned to territory/area | Bull Seva | Must Have | Pending
+51: 51 | Bull Seva | Distributor/market assignment | Distributor, market, employee, territory | Employee-wise distributor/market mapping | Bull Seva | Must Have | Pending
+52: 52 | Bull Seva | Field attendance/visit | Date, employee, territory, visit, location, purpose | Field staff attendance/visit report | Bull Seva | Must Have | Pending
+53: 53 | Bull Seva | Sales target & achievement | Employee, territory, period, target, achievement | Target → achievement → incentive/performance | Bull Seva | Must Have | Pending
+54: 54 | Bull Seva | Incentive management | Target slab, achievement, incentive amount | Configurable incentive rules and payroll integration | Bull Seva | Must Have | Pending
+55: 55 | Technical | Excel import/export | Employee import, attendance/payroll import where required, reports | Bulk upload and export with validation/error report | All | Must Have | Pending
+56: 56 | Technical | Notifications | In-app/email/SMS/WhatsApp-ready notifications | Approvals, reminders, payslip and HR alerts | All | Good to Have | Pending
+57: 57 | Technical | Backup & recovery | Automated backup, restore process | Regular backup and recovery mechanism | All | Must Have | Pending
+58: 58 | Technical | Mobile responsive | Employee/Manager access on mobile | No separate app required initially if responsive web works well | All | Must Have | Pending
+59: 59 | Technical | Admin configuration | Leave, shifts, departments, designations, salary components, approval levels | HR should change routine settings without developer | All | Must Have | Pending
+===== Company Specific =====
+1: Company | Area | Requirement | Details | Priority
+2: Bull Events Management Pvt. Ltd. | Event Management | Event-wise manpower | Assign employees/temporary manpower to event, venue, date and shift | Must Have
+3: Bull Events Management Pvt. Ltd. | Event Management | Event attendance | Reporting/closing time and event-wise attendance | Must Have
+4: Bull Events Management Pvt. Ltd. | Team Management | Production/Blue Collar | Separate classification and deployment | Good to Have
+5: Bull Events Management Pvt. Ltd. | Assets | Uniform/ID/Lanyard | Issue, return and condition tracking | Good to Have
+6: Bull Events Management Pvt. Ltd. | Payroll | Event OT/Incentive | Approved event OT and incentive should flow into payroll | Must Have
+7: Bull Realty | Sales | Project/Site allocation | Employee assigned to project/site and manager | Must Have
+8: Bull Realty | Sales | Target/KPI | Target vs achievement by employee/project/period | Must Have
+9: Bull Realty | Payroll | Sales incentive/commission | Configurable slabs/rules with approval | Must Have
+10: Bull Realty | Field Work | OD/Field duty | Official visit/site duty linked to attendance | Good to Have
+11: Bull Seva | Field Sales | Territory/Area | Employee mapped to territory and area | Must Have
+12: Bull Seva | Field Sales | Distributor/Market | Distributor/market assignment by employee | Must Have
+13: Bull Seva | Attendance | Field attendance/visit | Visit and location reporting | Must Have
+14: Bull Seva | Sales | Target/Achievement | Target vs achievement by employee/territory | Must Have
+15: Bull Seva | Payroll | Incentive | Configurable sales incentive and payroll integration | Must Have
+===== Approval Workflows =====
+1: Process | Step 1 | Step 2 | Step 3 | Step 4 | Final Result
+2: Recruitment | HR creates vacancy | Candidate shortlisted | Interview/selection | Offer & documents | Candidate converted to Employee
+3: Joining | Documents collected | Offer/appointment issued | Onboarding checklist | Employee ID created | Active Employee
+4: Leave | Employee applies | Manager approves | HR approval if required | Balance updated | Attendance updated
+5: Attendance Correction | Employee requests | Manager checks | HR approves if required | Record updated | Correct attendance
+6: Payroll | Attendance locked | LOP/incentive calculated | Payroll processed | HR/Accounts review | Payslip + payroll reports
+7: Expense | Employee submits | Manager approves | Accounts verifies | Payment processed | Reimbursement closed
+8: Exit | Resignation submitted | Manager/HR approval | Notice & clearance | F&F processed | Relieving + Experience Certificate
