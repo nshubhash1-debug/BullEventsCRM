@@ -18,11 +18,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Jeet Homes Solution — CRM & ERP",
-    template: "%s · Jeet Homes Solution",
+    default: "Bull Events — CRM & ERP",
+    template: "%s · Bull Events",
   },
   description:
-    "Multi-company, multi-branch real estate CRM & ERP platform for Jeet Homes Solution.",
+    "Multi-company, multi-branch events and wedding CRM & ERP platform for Bull Events.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

@@ -1,7 +1,7 @@
 import { BrandMark } from "@/components/auth/brand-mark";
-import { RealEstateFact } from "@/components/auth/real-estate-fact";
+import { CelebrationLineArt } from "@/components/auth/celebration-line-art";
+import { EventsFact } from "@/components/auth/events-fact";
 import { RotatingHeadline } from "@/components/auth/rotating-headline";
-import { SkylineLineArt } from "@/components/auth/skyline-line-art";
 
 export function AuthBrandPanel() {
   return (
@@ -18,15 +18,15 @@ export function AuthBrandPanel() {
 
       <div className="relative z-10 flex flex-col gap-8">
         <RotatingHeadline className="animate-fade-slide-up max-w-sm text-4xl leading-tight font-semibold tracking-tight [animation-delay:120ms]" />
-        <SkylineLineArt className="animate-fade-slide-up h-52 w-full text-[#17203a]/60 [animation-delay:260ms] sm:h-60 dark:text-[#f3ede0]/50" />
+        <CelebrationLineArt className="animate-fade-slide-up h-52 w-full text-[#17203a]/60 [animation-delay:260ms] sm:h-60 dark:text-[#f3ede0]/50" />
 
         <div className="animate-fade-slide-up max-w-sm border-t border-[#17203a]/10 pt-5 [animation-delay:420ms] dark:border-[#f3ede0]/10">
-          <RealEstateFact />
+          <EventsFact />
         </div>
       </div>
 
       <div className="animate-fade-slide-up relative z-10 text-xs text-[#17203a]/45 [animation-delay:520ms] dark:text-[#f3ede0]/35">
-        Jeet Homes Solution &copy; 2026
+        Bull Events &copy; 2026
       </div>
     </div>
   );

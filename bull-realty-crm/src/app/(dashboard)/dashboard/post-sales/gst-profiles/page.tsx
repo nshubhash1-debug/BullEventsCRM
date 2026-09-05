@@ -212,7 +212,7 @@ function ProfileForm({
                 id="g-legal"
                 value={form.legalName}
                 onChange={(e) => set("legalName", e.target.value)}
-                placeholder="Jeet Homes Solution Pvt Ltd"
+                placeholder="Bull Events Pvt Ltd"
               />
             </Field>
 

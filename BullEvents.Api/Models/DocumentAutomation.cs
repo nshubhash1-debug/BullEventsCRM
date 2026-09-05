@@ -172,8 +172,8 @@ public static class MergeFields
 {
     public static readonly MergeField[] All =
     [
-        new("{{company.name}}", "Company name", "Company", "Jeet Homes Solution"),
-        new("{{company.address}}", "Company address", "Company", "Varanasi"),
+        new("{{company.name}}", "Company name", "Company", "Bull Events"),
+        new("{{company.address}}", "Company address", "Company", "Mumbai"),
 
         new("{{booking.number}}", "Booking number", "Booking", "BRG/BKG/2026/0001"),
         new("{{booking.date}}", "Booking date", "Booking", "25 Aug 2026"),

@@ -4,10 +4,10 @@ import { useTypewriterLoop } from "@/hooks/use-typewriter-loop";
 import { cn } from "@/lib/utils";
 
 const TAGLINES = [
-  "Every branch. Every deal. One view.",
-  "Every lead. Every visit. Tracked.",
-  "One platform. Every branch synced.",
-  "Leads to bookings — fully connected.",
+  "Every event. Every crew. One view.",
+  "Enquiry to load-out — fully connected.",
+  "Every prop, every truck, accounted for.",
+  "One platform. Every venue, every date.",
 ];
 
 export function RotatingHeadline({ className }: { className?: string }) {

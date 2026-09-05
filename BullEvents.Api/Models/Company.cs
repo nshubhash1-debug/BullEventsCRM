@@ -50,9 +50,9 @@ public class Company
     /// The name on the incorporation certificate.
     ///
     /// Kept apart from <see cref="Name"/> because they differ in almost every
-    /// real company: the app header says "Jeet Homes", the sale deed has to say
-    /// "Jeet Homes Solution Private Limited". Null falls back to the display
-    /// name, which is right for a sole proprietor.
+    /// real company: the app header says "Bull Events", the contract has to say
+    /// "Bull Events Private Limited". Null falls back to the display name,
+    /// which is right for a sole proprietor.
     /// </summary>
     public string? LegalName { get; set; }
 

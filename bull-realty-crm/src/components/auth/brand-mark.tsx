@@ -31,7 +31,7 @@ export function BrandMark({
             variant === "cream" && "text-[#17203a] dark:text-[#f3ede0]"
           )}
         >
-          Jeet Homes Solution
+          Bull Events
         </span>
         <span
           className={cn(

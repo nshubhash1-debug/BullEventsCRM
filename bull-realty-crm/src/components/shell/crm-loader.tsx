@@ -407,7 +407,7 @@ export function CrmLoadingState({
  */
 export function CrmSplash({
   label = "Loading your workspace",
-  detail = "Jeet Homes Solution",
+  detail = "Bull Events",
   className,
   duration = BOOT_HOLD_MS,
 }: {

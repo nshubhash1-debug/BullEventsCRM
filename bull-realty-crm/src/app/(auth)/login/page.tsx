@@ -19,8 +19,8 @@ export default function LoginPage() {
           Welcome back
         </h1>
         <p className="text-sm text-muted-foreground">
-          Access your CRM to manage leads, inventory and deals across
-          every branch.
+          Enquiries, venues, décor stock and the crew who set it up —
+          across every branch.
         </p>
       </div>
 
